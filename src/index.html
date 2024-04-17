@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="./favicon/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="./favicon/favocon.png" type="image/png">
+  <link rel="stylesheet" href="sass/index.scss">
+  <!-- fonts -->
+  <link rel="preload" href="/fonts/onest-v6-cyrillic_latin-regular.woff2" type="font/woff2" as="font" crossorigin>
+  <link rel="preload" href="/fonts/onest-v6-cyrillic_latin-700.woff2" type="font/woff2" as="font" crossorigin>
   <title>Pet Planet - магазин товаров для животных!</title>
 </head>
 
@@ -19,11 +23,11 @@
   </header>
 
   <main class="main">
-    <h1>Pet Planet - магазин товаров для животных!</h1>
+    <h1 class="visually-hidden">Pet Planet - магазин товаров для животных!</h1>
     <section class="hero">
       <div class="container">
-        <h2>Товары для твоих любимцев</h2>
-        <img src="./images/tittle.svg" alt="Товары для твоих любимцев">
+        <h2 class="visually-hidden">Товары для твоих любимцев</h2>
+        <img class="hero__tittle" src="./images/tittle.svg" alt="Товары для твоих любимцев">
         <p class="hero__text">Большой выбор домиков, лежанок и&nbsp;кормов для кошек и&nbsp;собак</p>
       </div>
     </section>
@@ -89,8 +93,8 @@
       <img src="./images/logo.svg" alt="Логотип с лапой компании Pet-planet" class="footer__logo">
 
       <div class="footer__info">
-        <p class="footer__copyright">©Petshop, 2024</p>
-        <p class="footer__text">Проект сделан в учебных целях</p>
+        <p class="footer__copyright">&copy;Petshop, 2024</p>
+        <p class="footer__text">Проект сделан в&nbsp;учебных целях</p>
         <ul class="footer__list">
           <li class="footer__item">
             Designer: <a href="#" class="footer__item-link" target="_blank">Anastasia Ilina</a>
