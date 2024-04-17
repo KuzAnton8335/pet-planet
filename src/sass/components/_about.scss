@@ -36,6 +36,9 @@
   /* .about__text */
 
   &__text {
-    padding: 10px 24px;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
