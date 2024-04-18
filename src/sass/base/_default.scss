@@ -1,7 +1,9 @@
 @use "fonts" as *;
 @use "var" as *;
+@use "media" as *;
 html {
   position: relative;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
@@ -93,4 +95,12 @@ iframe {
   max-width: 1404px;
   padding: 0 52px;
   margin: 0 auto;
+
+  @include tablet {
+    padding: 0 46px;
+  }
+
+  @include mobile {
+    padding: 0 14px;
+  }
 }

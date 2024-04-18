@@ -1,11 +1,9 @@
 // base
-@use "./base/default" as *;
-@use "components/header" as *;
-@use "components/hero" as *;
-@use "components/about" as *;
-@use "components/advantategs" as *;
-@use "components/subscribe" as *;
-@use "components/footer" as *;
+@use "./base/default";
+@use "components/header";
+@use "components/hero";
+@use "components/about";
+@use "components/advantategs";
+@use "components/subscribe";
+@use "components/footer";
 @import "normalize.css";
-@import "./base/var";
-@import "./base/fonts";
