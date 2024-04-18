@@ -1,19 +1,48 @@
 @use "../base/var" as *;
+@use "../base/media" as *;
+
 .footer {
   padding: 80px 0 32px;
   background-color: $green;
   background-image: url("/images/paw.svg");
+  background-size: 311px 295px;
   background-repeat: no-repeat;
   color: $light;
-  background-position: 41vw 50px;
+  background-position: 30vw 50px;
+
+  @include laptop {
+    padding: 40px 0 32px;
+    background-size: 215px 203px;
+    background-position: 56vw 135px;
+  }
+
+  @include mobile {
+    padding: 30px 0 24px;
+    background-position: 61vw 200px;
+  }
+
   &__container {
     display: grid;
     grid-template-areas: "logo contacts" "info contacts";
+
+    @include mobile {
+      grid-template-areas: "logo" "contacts" "info";
+    }
   }
 
   &__logo {
     grid-area: logo;
     width: 331px;
+    margin-bottom: 50px;
+
+    @include tablet {
+      width: 200px;
+      margin-bottom: 82px;
+    }
+
+    @include mobile {
+      margin-bottom: 32px;
+    }
   }
 
   /* .footer__info */
@@ -58,6 +87,11 @@
     grid-area: contacts;
     justify-content: end;
     font-style: normal;
+
+    @include mobile {
+      justify-content: start;
+      margin-bottom: 67px;
+    }
   }
 
   /* .footer__contacts-email */

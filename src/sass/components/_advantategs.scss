@@ -5,15 +5,7 @@
 	position: relative;
 
 	/* .advantages__bg */
-	@include laptop {
-	}
-
-	@include tablet {
-	}
-
-	@include mobile {
-	}
-
+	
 	&__bg {
 		border-radius: 300px 300px 0 0;
 		background-color: $carrot;
