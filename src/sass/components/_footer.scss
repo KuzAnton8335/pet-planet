@@ -10,6 +10,10 @@
   color: $light;
   background-position: 30vw 50px;
 
+  @include bigscreen {
+    background-position: 39vw 32px;
+  }
+
   @include laptop {
     padding: 40px 0 32px;
     background-size: 215px 203px;

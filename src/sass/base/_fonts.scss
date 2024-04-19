@@ -2,12 +2,16 @@
 :root {
   --font-size: 24px;
 
+  @include bigscreen {
+    --font-size: 28px;
+  }
+
   @include laptop {
-    font-size: 20px;
+    --font-size: 20px;
   }
 
   @include mobile {
-    font-size: 16px;
+    --font-size: 16px;
   }
 }
 

@@ -4,11 +4,19 @@
 .hero {
   padding: 218px 0 245px;
   background-image: url("/images/bg-dog@1x.png"), url("/images/pattern.svg");
-  background-size: contain, cover;
+  background-size: contain, auto;
   background-position: right, bottom, center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat, repeat;
   background-color: $purple;
   color: $light;
+
+  @include bigscreen {
+    background-image: url("/images/bg-dog-bigscreen.png"), url("/images/pattern.svg");
+    background-position:
+      left 48vw bottom 0,
+      center;
+    background-size: 1850px, auto;
+  }
 
   @include laptop {
     padding: 148px 0 172px;

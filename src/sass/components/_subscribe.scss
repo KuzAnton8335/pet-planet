@@ -62,7 +62,7 @@
   &__input {
     border: 2px solid $purple;
     border-radius: 40px;
-    padding: 16px 32px;
+    padding: 14px 30px;
     width: 100%;
     background-color: transparent;
     font-size: inherit;
@@ -96,11 +96,9 @@
     color: $light;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 4px;
-
-    @include mobile {
-      font-size: 0;
-    }
+    min-width: 209px;
 
     &:after {
       content: "";
@@ -108,6 +106,18 @@
       width: 16px;
       height: 16px;
       background-image: url("/images/arrow-btn.svg");
+    }
+
+    @include mobile {
+      padding: 0;
+      min-width: 54px;
+    }
+  }
+
+  &__button-text {
+    @include mobile {
+      position: fixed;
+      transform: scale(0);
     }
   }
 }
