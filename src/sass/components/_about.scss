@@ -49,6 +49,14 @@
       flex-basis: 50%;
       height: 496px;
       background-image: url("/images/cat.png");
+      background-image: image-set(
+        url("/images/cat.avif") type("image/avif") 1x,
+        url("/images/cat.webp") type("image/webp") 1x,
+        url("/images/cat.png") type("image/png") 1x,
+        url("/images/cat@2x.avif") type("image/avif") 2x,
+        url("/images/cat@2x.webp") type("image/webp") 2x,
+        url("/images/cat@2x.png") type("image/png") 2x
+      );
       background-size: contain;
       background-repeat: no-repeat;
       background-position: center;

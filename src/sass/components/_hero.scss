@@ -4,6 +4,14 @@
 .hero {
   padding: 218px 0 245px;
   background-image: url("/images/bg-dog@1x.png"), url("/images/pattern.svg");
+  background-image: image-set(
+    url("/images/bg-dog@1x.avif") type("image/avif") 1x,
+    url("/images/bg-dog@2x.avif") type("image/avif") 2x,
+    url("/images/bg-dog@1x.webp") type("image/webp") 1x,
+    url("/images/bg-dog@1x.png") type("image/png") 1x,
+    url("/images/bg-dog@2x.webp") type("image/webp") 2x,
+    url("/images/bg-dog@2x.png") type("image/png") 2x
+  );
   background-size: contain, auto;
   background-position: right, bottom, center;
   background-repeat: no-repeat, repeat;
