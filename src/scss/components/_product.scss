@@ -1,0 +1,24 @@
+@use "../variables" as *;
+@use "../media" as *;
+@use "../fonts" as *;
+.product {
+	/* .product_btn-add-cart */
+
+	&_btn-add-cart {
+	}
+
+	/* .product__image */
+
+	&__image {
+	}
+
+	/* .product__title */
+
+	&__title {
+	}
+
+	/* .product__price */
+
+	&__price {
+	}
+}

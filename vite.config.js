@@ -1,6 +1,5 @@
-import { defineConfig } from 'vite';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
-
+import { defineConfig } from "vite";
+import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
   root: "./src",
@@ -25,8 +24,6 @@ export default defineConfig({
       avif: {
         quality: 70,
       },
-      cache: false,
-      cacheLocation: undefined,
     }),
   ],
-})
+});
